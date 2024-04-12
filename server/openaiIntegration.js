@@ -9,7 +9,7 @@ async function generateStory(prompt) {
         }, {
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': 'Bearer // your Open_APIkey'
+                'Authorization': 'Bearer' // your Open_APIkey from GPT-3
             }
         });
 
