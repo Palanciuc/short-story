@@ -1,0 +1,102 @@
+.login-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../images/book-794978_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.login-form-container p{
+    font-weight: bold;
+}
+
+.login-form-group {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.login-form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+}
+
+.login-form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.login-form-control:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0,123,255,0.25);
+}
+
+.submit-button {
+    width: 117%;
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-button:hover, .submit-button:focus {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.login-form-control::placeholder {
+    color: #aaa;
+}
+
+@keyframes slideUpFade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.login-form-container {
+    animation: slideUpFade 0.5s ease-out forwards;
+}
+
+@media (max-width: 768px) {
+    .login-form-container {
+        height: auto; 
+        padding: 20px; 
+    }
+
+    .login-form-group label {
+        font-size: 16px; 
+    }
+
+    .login-form-control {
+        font-size: 14px;
+    }
+
+    .submit-button {
+        width: 100%; 
+    }
+}
