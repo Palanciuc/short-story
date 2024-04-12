@@ -3,7 +3,7 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore"; 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDzPM6e2ASEpz5lhrNIcov2Nh2LpT2JOVM",
+  apiKey: "" // Your FireStore API_key,
   authDomain: "story-generator-1149a.firebaseapp.com",
   projectId: "story-generator-1149a",
   storageBucket: "story-generator-1149a.appspot.com",
